@@ -1,21 +1,21 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
-carpentry: "FIXME"    # what kind of Carpentry (must be either "dc" or "swc")
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: ["fixme@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-etherpad:             # optional: URL for the workshop Etherpad if there is one
-eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+carpentry: "swc"    # what kind of Carpentry (must be either "dc" or "swc")
+venue: "Université Laval"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "Pavillon Adrien-Pouliot, PLT-3928, 1065, avenue de la Médecine, Québec"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+country: "ca"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "fr"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "46.778608,-71.274771"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
+humandate: "7-8 mars 2017"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "8 h 30 - 17 h 00"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2017-03-07      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2017-03-08        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Maxime Boissonneault", "Félix-Antoine Fortin"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Julie Faure-Lacroix"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: ["support@calculquebec.ca"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+etherpad:   http://pad.software-carpentry.org/2017-03-07-Universite-Laval          # optional: URL for the workshop Etherpad if there is one
+eventbrite: 31537987971           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 <!-- See instructions in the comments below for how to edit specific sections of this workshop template. -->
@@ -46,38 +46,31 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   scrolling="auto">
 </iframe>
 {% endif %}
-
-<h4>This is the workshop template.  Use it to create your own website.
-Delete these lines and please fill in 
-<a href="{{site.amy_site}}/submit">this self-organized workshop form</a>
-and the administrator will contact you if we need any extra information.</h4>
-
-<h2 id="general">General Information</h2>
+<h2>Informations génériques</h2>
 
 <!--
   INTRODUCTION
-
   Edit the general explanatory paragraph below if you want to change
   the pitch.
 -->
 <p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>
-  aims to help researchers get their work done
-  in less time and with less pain
-  by teaching them basic research computing skills.
-  This hands-on workshop will cover basic concepts and tools,
-  including program design, version control, data management,
-  and task automation.
-  Participants will be encouraged to help one another
-  and to apply what they have learned to their own research problems.
+  La mission de <a href="{{site.swc_site}}">Software Carpentry</a> est
+  d'aider les scientifiques et ingénieurs à accélérer et faciliter 
+  le travail de recherche en leur enseignant des compétences de
+  base en calcul scientifique. Cet atelier pratique couvre des concepts et
+  outils de base, incluant le design de programmes, la gestion de révisions,
+  la gestion de données, et l'automatisation de tâches. Les participants
+  seront encouragés à s'entraider et à appliquer ce qu'ils ont appris
+  à leur propre problématique de recherche.
 </p>
 <p align="center">
   <em>
-    For more information on what we teach and why,
-    please see our paper
+    Pour davantage d'information sur la façon dont nous enseignons et le raisonnement derrière, voir
+    l'article (en anglais)
     "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
   </em>
 </p>
+
 
 <!--
   AUDIENCE
@@ -86,10 +79,8 @@ and the administrator will contact you if we need any extra information.</h4>
   workshop is only open to people from a particular institution.
 -->
 <p id="who">
-  <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
-  <strong>You don't need to have any previous knowledge of the tools that will
-    be presented at the workshop.</strong>
+   <strong>Qui:</strong>
+   L'atelier s'adresse principalement aux étudiants aux cycles supérieures et autres chercheurs.
 </p>
 
 <!--
@@ -102,11 +93,11 @@ and the administrator will contact you if we need any extra information.</h4>
 -->
 {% if page.latlng %}
 <p id="where">
-  <strong>Where:</strong>
+  <strong>Où:</strong>
   {{page.address}}.
-  Get directions with
+  Obtenez les informations pour vous rendre à l'événement
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
-  or
+  ou
   <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
 </p>
 {% endif %}
@@ -118,7 +109,7 @@ and the administrator will contact you if we need any extra information.</h4>
 -->
 {% if page.humandate %}
 <p id="when">
-  <strong>When:</strong>
+  <strong>Quand:</strong>
   {{page.humandate}}.
   <a href="//calendar.google.com/calendar/render?action=TEMPLATE&text={% if page.carpentry == "swc" %}Software{% elsif page.carpentry == "dc" %}Data{% endif %} Carpentry Workshop&dates={{ page.startdate | replace: "-", "" }}/{{ page.enddate | replace: "-", "" }}&trp=false&sprop&sprop=name:&sf=true&output=xml&location={{ page.address }}&details={% if page.carpentry == "swc" %}Software{% elsif page.carpentry == "dc" %}Data{% endif %} Carpentry Workshop at {{ page.venue }}">Add to your Google Calendar.</a>
 </p>
@@ -130,36 +121,10 @@ and the administrator will contact you if we need any extra information.</h4>
   Modify the block below if there are any special requirements.
 -->
 <p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. They should have a few specific software packages installed (listed
-  <a href="#setup">below</a>). They are also required to abide by
-  Software Carpentry's
-  <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
-</p>
-
-<!--
-  ACCESSIBILITY
-
-  Modify the block below if there are any barriers to accessibility or
-  special instructions.
--->
-<p id="accessibility">
-  <strong>Accessibility:</strong> We are committed to making this workshop
-  accessible to everybody.
-  The workshop organisers have checked that:
-</p>
-<ul>
-  <li>The room is wheelchair / scooter accessible.</li>
-  <li>Accessible restrooms are available.</li>
-</ul>
-<p>
-  Materials will be provided in advance of the workshop and
-  large-print handouts are available if needed by notifying the
-  organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  <a href="mailto:{{page.contact}}">get in touch</a> and we will
-  attempt to provide them.
+  <strong>Prérequis:</strong> Les participants doivent apporter leur propre ordinateur de préférence. 
+  Il est aussi recommandé d'installer les logiciels <a href="#setup">suivants</a>. Des accès
+  à un serveur de calcul de Calcul Québec seront fournis lorsque nécessaire. Les participants doivent aussi
+  adhérer au <a href="{{site.swc_site}}/conduct.html">code de conduite</a> de Software Carpentry (en anglais).
 </p>
 
 <!--
@@ -169,22 +134,13 @@ and the administrator will contact you if we need any extra information.</h4>
 -->
 <p id="contact">
   <strong>Contact</strong>:
-  Please email
+  Veuillez contacter
   {% if page.contact %}
-    {% for contact in page.contact %}
-      {% if forloop.last and page.contact.size > 1 %}
-        or
-      {% else %}
-        {% unless forloop.first %}
-        ,
-        {% endunless %}
-      {% endif %}
-      <a href='mailto:{{contact}}'>{{contact}}</a>
-    {% endfor %}
+    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
   {% else %}
-    to-be-announced
+    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
   {% endif %}
-  for more information.
+  pour avoir davantage d'informations.
 </p>
 
 <hr/>
@@ -196,35 +152,32 @@ and the administrator will contact you if we need any extra information.</h4>
   to match your plans.  You may also want to change 'Day 1' and 'Day
   2' to be actual dates or days of the week.
 -->
-<h2 id="schedule">Schedule</h2>
+<h2 id="schedule">Horaire</h2>
 
 <!-- DO NOT EDIT SURVEY LINKS -->
-<p><em>Surveys</em></p>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+<h2>Horaire</h2>
 
 <div class="row">
   <div class="col-md-6">
-    <h3>Day 1</h3>
+    <h3>Jour 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>08:30</td>  <td>Automatiser des tâches avec la ligne de commande Unix</td> </tr>
+      <tr> <td>10:30</td> <td>Pause</td> </tr>
+      <tr> <td>12:00</td>  <td>Dîner</td> </tr>
+      <tr> <td>13:30</td>  <td>Premiers pas sur les serveurs de calcul</td> </tr>
+      <tr> <td>15:00</td>  <td>Pause</td> </tr>
+      <tr> <td>17:00</td>  <td>Conclusion</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
-    <h3>Day 2</h3>
+    <h3>Jour 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>08:30</td>  <td>Gestion des révisions avec Git</td> </tr>
+      <tr> <td>10:30</td>  <td>Pause</td> </tr>
+      <tr> <td>12:00</td>  <td>Dîner</td> </tr>
+      <tr> <td>13:30</td>  <td>Introduction à la programmation avec Python</td> </tr>
+      <tr> <td>15:00</td>  <td>Pause</td> </tr>
+      <tr> <td>17:00</td>  <td>Conclusion</td> </tr>
     </table>
   </div>
 </div>
@@ -247,7 +200,7 @@ and the administrator will contact you if we need any extra information.</h4>
 <p id="etherpad">
   <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
   <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+  Nous utiliserons cet Etherpad pour discuter, prendre des notes, et partager des adresses et extraits de code.
 </p>
 {% endif %}
 
@@ -270,89 +223,61 @@ and the administrator will contact you if we need any extra information.</h4>
   please preview your site before committing, and make sure to run
   'tools/check' as well.
 -->
-<h2 id="syllabus">Syllabus</h2>
+<h2>Plan de cours</h2>
 
 <div class="row">
   <div class="col-md-6">
-    <h3 id="syllabus-shell">The Unix Shell</h3>
+    <h3>Ligne de commande Unix</h3>
     <ul>
-      <li>Files and directories</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things</li>
+      <li>Introduction à la ligne de commande</li>
+      <li>Arborescence de fichiers et répertoires</li>
+      <li>Création, suppression et gestion de fichiers et répertoires</li>
+      <li>Combinaisons de commandes, redirections et filtres</li>
+      <li>Boucles</li>
+      <li>Scripts bash</li>
+      <li>Recherche de fichiers</li>
       <li><a href="{{site.swc_pages}}/shell-novice/reference/">Reference...</a></li>
     </ul>
   </div>
   <div class="col-md-6">
-    <h3 id="syllabus-python">Programming in Python</h3>
+    <h3>Premiers pas sur les serveurs de calcul</h3>
     <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_pages}}/python-novice-inflammation/reference/">Reference...</a></li>
+      <li>Introduction au calcul informatique de pointe</li>
+      <li>Vocabulaire, composantes d’un ordinateur et structure d’une grappe de calcul</li>
+      <li>Transfert de fichiers à partir de/vers la grappe de calcul avec Globus</li>
+      <li>Utilisation de modules</li>
+      <li>Utilisation de l’ordonnanceur et soumission de tâches</li>
     </ul>
   </div>
-  <!--
-  <div class="col-md-6">
-    <h3 id="syllabus-r">Programming in R</h3>
-    <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_pages}}/r-novice-inflammation/reference/">Reference...</a></li>
-    </ul>
-  </div>
-  -->
-  <!--
-  <div class="col-md-6">
-    <h3 id="syllabus-matlab">Programming in MATLAB</h3>
-    <ul>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li><a href="{{site.swc_pages}}/matlab-novice-inflammation/reference/">Reference...</a></li>
-     </ul>
-   </div>
-   -->
 </div>
-
 <div class="row">
   <div class="col-md-6">
-    <h3 id="syllabus-git">Version Control with Git</h3>
+    <h3>Gestion de révisions avec Git</h3>
     <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
+      <li>Introduction à la gestion des révisions</li>
+      <li>Configuration de Git</li>
+      <li>Créer un dépôt</li>
+      <li>Suivre les révisions</li>
+      <li>Explorer l’historique</li>
+      <li>Ignorer certains fichiers</li>
+      <li>Dépôts distants</li>
+      <li>Collaborer</li>
+      <li>Gestion des conflits</li>
+      <li>Science ouverte, licences et hébergement</li>
       <li><a href="{{site.swc_pages}}/git-novice/reference/">Reference...</a></li>
     </ul>
   </div>
   <div class="col-md-6">
-    <h3 id="syllabus-sql">Managing Data with SQL</h3>
+    <h3>Introduction à la programmation avec Python</h3>
     <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_pages}}/sql-novice-survey/reference/">Reference...</a></li>
+      <li>Analyser des données avec des bibliothèques externes</li>
+      <li>Répéter des actions avec des boucles</li>
+      <li>Stocker des données dans des listes</li>
+      <li>Analyser des données issues de plusieurs fichiers</li>
+      <li>Faire des choix</li>
+      <li>Créer des fonctions</li>
+      <li>Tester son code, prévoir les erreurs et déboguer</li>
+      <li><a href="{{site.swc_pages}}/python-novice-inflammation/reference/">Reference...</a></li>
     </ul>
   </div>
 </div>
